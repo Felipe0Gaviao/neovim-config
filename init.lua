@@ -1,5 +1,9 @@
 require("config.lazy")
 
+vim.diagnostic.config({
+  virtual_text = true,
+})
+
 local set = vim.keymap.set
 
 set("n", "<space><space>x", "<cmd>source %<CR>") -- quick souce current file for when i'm editing my config
